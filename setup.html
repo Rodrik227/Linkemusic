@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/setup.css">
+</head>
+<body>
+    <img class="logo" src="assets/logo.svg" alt="logo linkemusic">
+    <section class="box">
+        <h1>Cadastro</h1>
+        <form>
+        <label>Nome:</label><br>
+        <input input name="Cadastro" type="text" placeholder="Exemple Exemple" required><br>
+        <label>Nome de usuario:</label><br>
+        <input input name="Cadastro" type="text" placeholder="Exemple200" required><br>
+        <label>O que você faz:</label><br>
+        <label>Músico</label><input name="Cadastro" type="radio" required><br>
+        <label>Produtor</label><input name="Cadastro" type="radio" required><br>
+        <label>Dono de estabelecimento</label><input name="Cadastro" type="radio" required><br>
+        <label>Senha:</label><br>
+        <input id="senha" input name="Cadastro" type="password" placeholder="Escreva sua senha" required><br>
+        <label>Repita sua senha:</label><br>
+        <input id="senhaC" input name="Cadastro" type="password" placeholder="Reescreva sua senha" required><br>
+        <input name="Cadastro" onclick="return validarSenha()" type="submit" value="Cadastrar">
+        </form>
+
+    </section>
+    <img class="nota" src="/assets/backgound.png" alt="">
+    <script src="script.js"></script>
+</body>
+</html>
