@@ -34,16 +34,21 @@ header h1 {
 }
 .userT{
     margin-left: 5px;
+    max-width: 5vw;
+    margin-top: 10px;
 }
 .user {
     margin-top: 0;
     display: flex;
-    margin-left:  20vw;
+    margin-left: 30vw;
     cursor: pointer;
     transition: .2s ease-in;
     border-radius: 20px;
     justify-self: center;
     width: 10vw;
+}
+.user img {
+    width: 3vw;
 }
 .user:hover {
     background-color: rgba(255, 255, 255, 0.264);
@@ -61,7 +66,7 @@ header{
     background-color: #00000D;
     display: flex;
     align-self: center;
-    padding: 2vw;
+    padding: .5vw;
 }
 .search {
     justify-self: start;
@@ -77,6 +82,10 @@ header{
     color: #00000D;
     outline: none;
     margin-left: 0.5vw;
+}
+header img.logo {
+    width: 16vw;
+    margin-right: 15vw;
 }
 /* -----------------------------------------------------------imagem  */
 .estudio {

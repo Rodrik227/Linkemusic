@@ -14,7 +14,7 @@ function account() {
     const data = JSON.parse(user)
 
     const userName = document.getElementById('user')
-    userName.innerHTML = data.name
+    userName.innerHTML = data.user
 
     
 }
