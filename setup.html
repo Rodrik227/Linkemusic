@@ -11,22 +11,24 @@
     <img class="logo" src="assets/logo.svg" alt="logo linkemusic">
     <section class="box">
         <h1>Cadastro</h1>
-        <form>
+        <form id="formC">
         <label>Nome:</label><br>
-        <input input name="Cadastro" type="text" placeholder="Exemple Exemple" required><br>
+        <input id="name" type="text" placeholder="Exemple Exemple" required><br>
         <label>Nome de usuario:</label><br>
-        <input input name="Cadastro" type="text" placeholder="Exemple200" required><br>
+        <input id="user"  type="text" placeholder="Exemple200" required><br>
+        <label>Nome:</label><br>
+        <input id="email"  type="email" placeholder="Exemple@example.com" required><br>
         <label>O que você faz:</label><br>
-        <label>Músico</label><input name="Cadastro" type="radio" required><br>
-        <label>Produtor</label><input name="Cadastro" type="radio" required><br>
-        <label>Dono de estabelecimento</label><input name="Cadastro" type="radio" required><br>
+        <label>Músico</label><input name="Cadastro" data-radio="msc" type="radio" required><br>
+        <label>Produtor</label><input name="Cadastro" data-radio="produtor" type="radio" required><br>
+        <label>Dono de estabelecimento</label><input name="Cadastro" data-radio="dono" type="radio" required><br>
         <label>Senha:</label><br>
-        <input id="senha" input name="Cadastro" type="password" placeholder="Escreva sua senha" required><br>
+        <input id="senha" type="password" placeholder="Escreva sua senha" required><br>
         <label>Repita sua senha:</label><br>
-        <input id="senhaC" input name="Cadastro" type="password" placeholder="Reescreva sua senha" required><br>
-        <input name="Cadastro" onclick="return validarSenha()" type="submit" value="Cadastrar">
+        <input id="senhaC" type="password" placeholder="Reescreva sua senha" required><br>
+        <input  onclick=" validarSenha()" type="submit" value="Cadastrar">
         </form>
-
+        <a href="./login.html">Já tenho uma conta</a>
     </section>
     <img class="nota" src="/assets/backgound.png" alt="">
     <script src="script.js"></script>

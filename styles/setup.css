@@ -6,7 +6,8 @@
 section.box {
     background-color: white;
     padding: 40px;
-    margin-top: 15vh;
+    padding-top: 0px;
+    margin-top: 9vh;
     border-radius: 20px;
     box-shadow: 4px 2px 30px 2px rgb(0, 0, 0,0.5);
     
@@ -69,6 +70,8 @@ input[type=submit] {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.275);
     transition: .3s ease-out;
     cursor: pointer;
+    margin-left: 4vw;
+    text-align: center;
 }
 input[type=submit]:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);

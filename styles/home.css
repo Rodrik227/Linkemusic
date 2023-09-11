@@ -61,6 +61,7 @@ h1 {
 }
 
 button {
+    background-color: #dbdbdba1;
     padding: 20px;
     width: 150px;
     border: none;
@@ -93,4 +94,12 @@ button:hover {
     height: 100vh;
     position: absolute;
     opacity: 0.09;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

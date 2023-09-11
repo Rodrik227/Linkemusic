@@ -10,20 +10,22 @@
 <body>
     <img class="logo" src="assets/logo.svg" alt="logo linkemusic">
     <section class="box">
+        <form id="formL" onsubmit="checkAccount()">
         <h1>Login</h1>
         <label>Email</label>
         <br>
-        <input type="email" placeholder="Escreva seu email" required></input>
+        <input id="emailL" type="email" placeholder="Escreva seu email" required></input>
         <br>
         <label>Senha</label>
         <br>
-        <input type="password" placeholder="Escreva sua senha" class="login_password" required></input>
+        <input id="senhaL" type="password" placeholder="Escreva sua senha" class="login_password" required></input>
         <p class="p2"><a href="setup.html">Esqueceu sua senha?</a></p>
-        <div class="login_button">
-        <a href="index.html"><button>Login</button></a></div>
-        <p class="p2"><a href="setup.html">Não tem uma conta?</a></p>
-    </section>
+        <input  onclick="checkAccount()" type="submit" value="Login">
+            <p class="p2"><a href="setup.html">Não tem uma conta?</a></p>
+        </form>
+        </section>
 
     <img class="nota" src="/assets/backgound.png" alt="">
+    <script src="script.js"></script>
 </body>
 </html>
