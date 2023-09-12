@@ -1,13 +1,56 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/inicio.css">
     <title>Home</title>
 </head>
+
 <body>
-    <header>
+    <section id="finish">
+        <div id="right">
+            <form id="formCD">
+            <h1>Quase lá</h1>
+            <h2>Faça mais alguns passos para terminar o cadastro</h2> 
+            <h3 id="p1">Infome seu CPF</h3>
+            <input type="text" required placeholder="000.000.000-00">
+            <h3 id="p2">Informe sua cidade</h3>
+            <input type="text" required placeholder="Jaragua do Sul">  
+            <h3 id="p3">Selecione seu tipo músical principal</h3>
+            <select name="cars" id="cars">
+                <option value="Axé">Axé</option>
+                <option value="Blues">Blues</option>
+                <option value="Country">Country</option>
+                <option value="Eletrônica">Eletrônica</option>
+                <option value="Forro">Forró</option>
+                <option value="Funk">Funk</option>
+                <option value="Gospel">Gospel</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="Jazz">Jazz</option>
+                <option value="MPB">MPB</option>
+                <option value="Clássica">Música clássica</option>
+                <option value="Pagode">Pagode</option>
+                <option value="Pop">Pop</option>
+                <option value="Rap">Rap</option>
+                <option value="Reggae">Reggae</option>
+                <option value="Rock">Rock</option>
+                <option value="Samba">Samba</option>
+              </select>
+            <h3 id="p4">Coloque sua data de nascimento</h3>
+            <input type="date" required>
+            
+        </div>
+        <div id="left">
+            <img src="assets/amp.png">
+            <br>
+            <input type="submit" value="Pronto" >
+        </form>
+        </div>
+    </section>
+    <header class="blur">
         <img class="logo" src="assets/logo.png">
         <div class="search">
             <img src="assets/search.svg">
@@ -17,60 +60,50 @@
             <img src="assets/user.svg">
             <section class="userT">
                 <h1 id="user"></h1>
-                <p id="job">Vagabunda</p>   
+                <p id="job"></p>
             </section>
         </div>
     </header>
-
-    <main>
+    <main class="blur">
 
         <img class="estudio" src="assets/Fundo.png" alt="Imagem de um estúdio">
-
         <section class="secao">
-
             <div class="type">
                 <p>Type Beat</p>
             </div>
-
             <div class="studio">
-                <p>Seção Estúdio</p>
+                <p>Sessão Estúdio</p>
             </div>
-
             <div class="vivo">
                 <p>Música ao Vivo</p>
             </div>
-
             <div class="texttype">
                 <p>Type Beat <br> "Fire" Ecologyk</p>
                 <span class="preco">
                     <p>R$2,99</p>
                 </span>
             </div>
-
             <div class="textstudio">
-                <p>Seção Estúdio <br> &emsp; </p>
+                <p>Sessão Estúdio <br> &emsp; </p>
                 <span class="preco">
                     <p>R$ Tratar</p>
                 </span>
             </div>
-
             <div class="textvivo">
                 <p>Música ao Vivo <br> (disponível para estabelecimentos) </p>
                 <span class="preco">
                     <p>R$ Tratar</p>
                 </span>
             </div>
-
         </section>
-        
     </main>
-
-    
-    <footer>
-        <p>Nos siga no <a id="instagram" target="_blank" href="https://www.instagram.com/linkemusic">Instagram</a> e <a id="twitter" target="_blank" href="https://www.twitter.com/linkemusic">Twitter</a></p>
+    <footer class="blur">
+        <p>Nos siga no <a id="instagram" target="_blank" href="https://www.instagram.com/linkemusic">Instagram</a> e <a
+                id="twitter" target="_blank" href="https://www.twitter.com/linkemusic">Twitter</a></p>
         <p>"Copyright © 2023 de Surred Corp.<br>Todos os direitos reservados."</p>
         <p>Feito por Eduardo Baierle dos Santos, João Vitor Kuhn Rangel e Rodrigo Penno Dini</p>
     </footer>
     <script src="inicio.js"></script>
 </body>
+
 </html>

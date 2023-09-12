@@ -33,7 +33,8 @@ function checkForm() {
       name: document.getElementById('name').value,
       user: document.getElementById('user').value,
       pass: document.getElementById('senha').value,
-      type: document.querySelector('input[name=Cadastro]:checked').dataset.radio
+      type: document.querySelector('input[name=Cadastro]:checked').dataset.radio,
+      account: 1
     }
     localStorage.setItem(document.getElementById('email').value, JSON.stringify(person))
     window.location.href = "login.html"

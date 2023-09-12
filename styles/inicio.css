@@ -6,8 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
-    color: white;
-    
+    outline: none;
 }
 body {
     background-color: #DDDDDD;
@@ -16,7 +15,73 @@ body {
 body::-webkit-scrollbar {
     width: 0.1px;
 }
+/* -----------------------------------------------------------Cadastro */
+#finish {
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+    top: 10vh;
+    left: 25vw;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: none;
 
+}
+#right {
+    max-width: 25vw;
+}
+#finish #right h1 {
+    color: black;
+    font-family: 'Righteous';
+    font-size: xx-large;
+}
+#right h2 {
+    color: black;
+    font-size: large;
+}
+#left img {
+    width: 20vw;
+}
+#right h3 {
+    color: black;
+    font-weight: 400;
+    margin-top: 1vh;
+}
+#finish input[type=text] {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+}
+input[type=submit] {
+    font-size: 17px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.275);
+    transition: .3s ease-out;
+    cursor: pointer;
+    margin-left: 4vw;
+    text-align: center;
+}
+input[type=submit]:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);  
+}
+input[type=date] {
+    border: none;
+    padding: 5px 10px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    font-size: medium;
+}
+select {
+    border: none;
+    padding: 2px 10px;
+    outline: none;
+    font-size: medium;
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+}
 /* -----------------------------------------------------------HEADER */
 header h1 {
     font-family: 'Righteous';
@@ -28,6 +93,7 @@ header h1 {
     font-family: 'inter', sans-serif;
     font-size: large;
     font-weight: 400;
+    color: white;
 }
 .userT p {
     font-weight: 100;
@@ -46,6 +112,7 @@ header h1 {
     border-radius: 20px;
     justify-self: center;
     width: 10vw;
+    color: white;
 }
 .user img {
     width: 3vw;
