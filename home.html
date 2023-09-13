@@ -16,7 +16,7 @@
             <h1>Quase lá</h1>
             <h2>Faça mais alguns passos para terminar o cadastro</h2> 
             <h3 id="p1">Infome seu CPF</h3>
-            <input type="text" required placeholder="000.000.000-00">
+            <input id="cpf" type="text" required placeholder="000.000.000-00">
             <h3 id="p2">Informe sua cidade</h3>
             <input type="text" required placeholder="Jaragua do Sul">  
             <h3 id="p3">Selecione seu tipo músical principal</h3>
@@ -40,13 +40,13 @@
                 <option value="Samba">Samba</option>
               </select>
             <h3 id="p4">Coloque sua data de nascimento</h3>
-            <input type="date" required>
+            <input id="nasc" type="date" required>
             
         </div>
         <div id="left">
             <img src="assets/amp.png">
             <br>
-            <input type="submit" value="Pronto" >
+            <input type="submit" onclick="calcularIdade()" value="Pronto" >
         </form>
         </div>
     </section>
