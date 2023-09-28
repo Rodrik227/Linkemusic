@@ -30,19 +30,19 @@ body {
 input[type=text] {
     border: none;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgb(219, 219, 219);
 }
 input[type=password] {
     border: none;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 7px;
     background-color: rgb(219, 219, 219);
 }
 input[type=email] {
     border: none;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgb(219, 219, 219);
 }
 a {
