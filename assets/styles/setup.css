@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Righteous&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+section.box {
+    background-color: white;
+    padding: 40px;
+    padding-top: 0px;
+    margin-top: 9vh;
+    border-radius: 20px;
+    box-shadow: 4px 2px 30px 2px rgb(0, 0, 0,0.5);
+    
+}
+
+input {
+    margin-bottom: 2vh;
+}
+label {
+    margin-top: 20px;
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+input[type=text] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(219, 219, 219);
+}
+input[type=password] {
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(219, 219, 219);
+}
+input[type=email] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(219, 219, 219);
+}
+a {
+    text-align: right;
+    font-size: 15px;
+}
+.p2 {
+    text-align: center;
+    justify-self: end;
+    margin-bottom: 1.5vh;
+    margin-top: 1vh;
+    color: black;
+}
+.login_button {
+    display: flex;
+    justify-content: center;
+}
+.login_password {
+    margin-bottom: 0vh;
+}
+input[type=submit] {
+    font-size: 17px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.275);
+    transition: .3s ease-out;
+    cursor: pointer;
+    margin-left: 4vw;
+    text-align: center;
+}
+input[type=submit]:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);
+    
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/setup.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Login</title>
+</head>
+<body>
+    <img class="logo" src="assets/logo.svg" alt="logo linkemusic">
+    <section class="box">
+        <form id="formL" onsubmit="checkAccount()">
+        <h1>Login</h1>
+        <label>Email</label>
+        <br>
+        <input id="emailL" type="email" placeholder="Escreva seu email" required></input>
+        <br>
+        <label>Senha</label>
+        <br>
+        <input id="senhaL" type="password" placeholder="Escreva sua senha" class="login_password" required></input>
+        <p class="p2"><a href="setup.html">Esqueceu sua senha?</a></p>
+        <input  onclick="checkAccount()" type="submit" value="Login">
+            <p class="p2"><a href="setup.html">Não tem uma conta?</a></p>
+        </form>
+        </section>
+
+    <img class="nota" src="/assets/backgound.png" alt="">
+    <script src="script.js"></script>
+</body>
+</html>
