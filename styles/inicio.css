@@ -15,6 +15,12 @@ body {
 body::-webkit-scrollbar {
     width: 0.1px;
 }
+:root {
+    --navy: #004A94;
+    --blue: #43C3DD;
+    --black: #001B2C;
+    --baby: #D9EDF8;
+}
 /* -----------------------------------------------------------Cadastro */
 #finish {
     z-index: 20;
@@ -121,6 +127,11 @@ header h1 {
     justify-self: center;
     width: 10vw;
     color: white;
+    text-decoration: none;
+}
+.user a {
+    color: white;
+    text-decoration: none;
 }
 .user img {
     width: 3vw;
@@ -262,8 +273,11 @@ header img.logo {
     padding: 10px 20px;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
+
     
-    
+}
+.perfil {
+    text-decoration: none;
 }
 .infosA h3{
     width: 12vw;
