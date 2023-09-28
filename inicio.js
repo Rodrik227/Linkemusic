@@ -76,155 +76,39 @@ function calcularIdade() {
 
     document.getElementById("formCD").reportValidity();
 }
-const events  = [
-    {
-        user: 1,
-        title: "Super event",
-        style: "rock",
-        city: "puta q te pariu",
-        img: "https://static.standard.co.uk/2022/10/06/17/newFile-1.jpg?width=968&auto=webp&quality=50&crop=968%3A645%2Csmart"
-    },
-    {
-        user: 2,
-        title: "Alabama fest",
-        style: "Pop/rap",
-        city: "Porto alegre",
-        img: "https://lh3.googleusercontent.com/nwaSif1Ytlcm79PeDvIU8Qib0MFJVhNZLQukq5k7XF6ABrsbNayYAaNqraXiQGlbhcNZjjX3pE9AYqdIUzD6Y-Wn_g=h200-rw"
-    },
-    {
-        user: 6,
-        title: "Bailão top",
-        style: "funk",
-        city: "Canoas",
-        img: "https://images.squarespace-cdn.com/content/v1/5a68f2eed0e6285be82a9fcc/1526807384376-0I1ETBFAM8MZHKOEPG8S/image2.jpeg"
-    },
-    {
-        user: 7,
-        title: "electrofest",
-        style: "eletronica",
-        city: "Novo Hamburgo",
-        img: "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/cached.imagescaler.hbpl.co-201604271135049.jpg"
-    },
-]
-const artists = [
+let artists
+let events
 
-    {
-        user: "Geraldo455",
-        stars: "0",
-        style: "rock",
-        age: "19",
-        bio: "Nasci em uma pequena cidade, onde minha paixão pela música começou a florescer.",
-        img: "https://caricom.org/wp-content/uploads/Floyd-Morris-Remake-1024x879-1.jpg",
-        bioL: "Nasci em uma pequena cidade do interior, onde minha paixão pela música começou a florescer. Desde jovem, estava fascinado por instrumentos musicais e passava horas explorando os sons da natureza. Aos 19 anos, estou pronto para embarcar em uma jornada musical emocionante.",
-        bigImg: "",
-        members: 1,
-        data: "02/04/04",
-        nomes: "Geraldo da Silva"
-    },
+fetch('./assets/artists.json')
+    .then((response) => response.json())
+    .then((json) => {artists = json});
 
-    {
-        user: "PocketMirror",
-        stars: "4.2",
-        style: "rock",
-        age: "19",
-        bio: "Banda de pop-punk, metalcore entre outros 🤘🤘🤘🤘🤘🤘🤘",
-        img: "./assets/pocket.jpg",
-        bioL: "Somos uma banda apaixonada por música e estamos prontos para fazer vocês balançarem ao som do nosso pop-punk e metalcore. Com apenas 19 anos, estamos apenas começando nossa jornada musical!",
-        bigImg: "",
-        members: 1,
-        data: "10/08/02",
-        nomes: "Lucas Andrade"
-    },
-    {
-        user: "AnaPopGirl",
-        stars: "2.8",
-        style: "pop",
-        age: "24",
-        bio: "Adoro música pop e sonho em ser uma grande cantora!",
-        img: "https://deadline.com/wp-content/uploads/2020/09/Gugu-Mbatha-Raw-e1610021013129.jpg",
-        bioL: "Meu amor pela música pop começou quando era criança e desde então, tenho sonhado em me tornar uma grande cantora. Com 24 anos, estou trabalhando duro para realizar esse sonho!",
-        bigImg: "",
-        members: 1,
-        data: "14/05/99",
-        nomes: "Ana Silva"
-    },
-    {
-        user: "JorgeJazz",
-        stars: "3.7",
-        style: "jazz",
-        age: "45",
-        bio: "Saxofonista apaixonado por jazz e blues.",
-        img: "https://www.choosingtherapy.com/wp-content/uploads/2021/11/Dr-Tanveer-Ahmed.jpg",
-        bioL: "Minha paixão pelo jazz e blues me levou a uma vida dedicada à música. Como saxofonista, encontro alegria em cada nota que toco. Com 45 anos de idade, continuo explorando os horizontes musicais.",
-        bigImg: "",
-        members: 1,
-        data: "20/12/77",
-        nomes: "Jorge Santos"
-    },
-    {
-        user: "SophiaRapQueen",
-        stars: "4.8",
-        style: "rap",
-        age: "29",
-        bio: "Cantora de rap com letras poderosas e impactantes.",
-        img: "https://salaovirtual.org/wp-content/uploads/2022/04/Cabelo-egirl-Azul.jpg",
-        bioL: "Minhas letras de rap são minha voz para questões importantes. Com 29 anos, estou comprometida em criar músicas poderosas e impactantes que ressoem com as pessoas e inspirem mudanças.",
-        bigImg: "",
-        members: 1,
-        data: "05/09/94",
-        nomes: "Sophia Oliveira"
-    },
-    {
-        user: "LucasCountryBoy",
-        stars: "3.1",
-        style: "country",
-        age: "36",
-        bio: "Fã de música country e amante da vida no campo.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Guy_Pearce_Cannes_2012.jpg/250px-Guy_Pearce_Cannes_2012.jpg",
-        bioL: "A música country sempre esteve no meu coração, assim como a vida no campo. Com 36 anos, continuo vivendo minha paixão e compartilhando minha música country com o mundo.",
-        bigImg: "",
-        members: 1,
-        data: "18/06/87",
-        nomes: "Lucas Rodrigues"
-    },
-    {
-        user: "IsabelaReggaeVibes",
-        stars: "2.5",
-        style: "reggae",
-        age: "23",
-        bio: "Apaixonada pelo reggae e pela cultura rastafári.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35Sk9mMEcBuooCRGNUylcYn-PR6IZhDHzvA&usqp=CAU",
-        bioL: "O reggae é minha alma e a cultura rastafári é minha inspiração. Com 23 anos, continuo espalhando amor e positividade através da música reggae.",
-        bigImg: "",
-        members: 1,
-        data: "09/03/00",
-        nomes: "Isabela Santos"
-    },
-    {
-        user: "MiguelEDM",
-        stars: "4.0",
-        style: "EDM",
-        age: "31",
-        bio: "DJ de música eletrônica que faz as pistas de dança tremerem.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ZkFsNmh9sXRBcg004H8SgLCsOffQTtoAdw&usqp=CAU",
-        bioL: "Minhas batidas eletrônicas fazem as pistas de dança tremerem. Com 31 anos, continuo a trazer energia e diversão para as festas com minha música EDM.",
-        bigImg: "",
-        members: 1,
-        data: "28/11/91",
-        nomes: "Miguel Silva"
-    },
-    {
-        user: "LaraClassical",
-        stars: "4.5",
-        style: "clássica",
-        age: "42",
-        bio: "Violinista apaixonada pela música clássica e compositora de renome.",
-        img: "https://www.dicasdemulher.com.br/wp-content/uploads/2020/10/soft-girl-054.jpg",
-        bioL: "Sou Lara, uma violinista apaixonada pela música clássica e uma compositora de renome. Trago à vida o encanto e a beleza da música erudita com meu violino. Com ele, teço melodias que tocam a alma e transportam meus ouvintes para um mundo de emoção e refinamento. Ao longo de minha carreira, tive o privilégio de cativar plateias ao redor do mundo com minha interpretação magistral e composições inspiradoras. Minha dedicação à música clássica é uma jornada de amor e devoção, e minha arte continua a enriquecer a vida daqueles que têm o privilégio de me ouvir."
+
+fetch('./assets/events.json')
+    .then((response) => response.json())
+    .then((json) => events = json);
+
+    async function fetchData() {
+        try {
+            const artistsResponse = await fetch('./assets/artists.json');
+            const artists = await artistsResponse.json();
+    
+            const eventsResponse = await fetch('./assets/events.json');
+            const events = await eventsResponse.json();
+    
+            // Agora que os dados foram carregados, você pode chamar a função createEvent
+            createEvent(artists, events);
+        } catch (error) {
+            console.error('Erro ao buscar dados:', error);
+        }
     }
-
-]
-let key = 0
+    
+    function createEvent(artists, events) {
+        // Aqui você pode usar os dados de artists e events
+        // Faça o que você precisa fazer com os dados
+    }
+    
+    // Chame a função fetchData para iniciar o processo
 
 function createEvent() {
     events.forEach(event => {
@@ -287,6 +171,9 @@ eventsDiv.appendChild(eventDiv);
 const artistDiv = document.createElement("div");
 artistDiv.className = "artist";
 
+const link = document.createElement('a')
+link.href = `./perfil.html?id=${artist.user}&type=1`
+link.className = "perfil"
 // Cria a div "userA" dentro da div "artist"
 const userADiv = document.createElement("div");
 userADiv.className = "userA";
@@ -339,10 +226,11 @@ artistDiv.appendChild(bioPara);
 
 // Adiciona a div "artist" à div com o id "artists" existente no HTML
 const artistsContainer = document.getElementById("artists");
-artistsContainer.appendChild(artistDiv);
+artistsContainer.appendChild(link)
+link.appendChild(artistDiv);
 
     })
 }
 
 
-createEvent()
+fetchData();

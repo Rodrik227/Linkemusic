@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/perfil.css">
+    <link rel="stylesheet" href="./styles/perfil.css">
     <title>Perfil</title>
 </head>
 <body>
     
     <header>
-        <img class="logo" src="assets/logo.png">
+        <a href="./home.html">
+            <img class="logo" src="assets/logo.png">
+        </a>
         <div class="search">
             <img src="assets/search.svg">
             <input type="text" placeholder="artistas/produtores/eventos">
         </div>
         <div class="user">
             <img src="assets/user.svg">
+            <a href="./perfil.html?type=4">
             <section class="userT">
-                <h1 id="user">Nome</h1>
-                <p id="job">Artista</p>
+                <h1 id="user"></h1>
+                <p id="job"></p>
             </section>
+            </a>
         </div>
     </header>
 
@@ -27,45 +31,45 @@
 
         <div class="perfil">
             <div class="nomeperfil">
-                <div class="bola"></div>
+                <div id="userImg" class="bola"></div>
                 
-                <p class="nome">Nome de Perfil</p>
+                <p class="nome"></p>
 
                 <p class="estrelas">Estrelas 5/5</p>
 
                 <div class="membros">
-                    <div class="logo-membro"></div>
-                    <p>1 membros</p>
+                    <img src="./assets/userS.svg">
+                    <p id="member">1 membros</p>
                 </div>
 
                 <div class="estilo">
-                    <div class="logo-estilo"></div>
-                    <p>Estilo, Estilo <br> Estilo, Estilo</p>
+                    <img class="style" src="./assets/music2.svg">
+                    <p id="style"></p>
                 </div>
 
             </div>
 
             <div class="biografia-geral">
             
-                <div class="foto"></div>
+                <div id="foto" class="foto"></div>
 
                     <p class="gerais">Informações Gerais:</p>
 
                     <div class="inf-geral">
 
                         <div class="data">
-                        <div class="data-logo"></div>
-                        <p>00/00/00</p>
+                        <img class="svg" src="./assets/calendar.svg">
+                        <p id="date"></p>
                     </div>
 
                     <div class="cidade">
-                        <div class="logo-cidade"></div>
+                        <img class="svg" src="./assets/place.svg">
                         <p>Santa Cruz do Sul - RS</p>
                     </div>
 
                     <div class="pessoa">
-                        <div class="logo-pessoa"></div>
-                        <p>Nome da pessoa</p>
+                        <img class="svg" src="./assets/userS.svg">
+                        <p id="name"></p>
                     </div>
 
                     
@@ -75,13 +79,13 @@
                 <p class="bio-p">Biografia:</p>
 
                     <div class="bio">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium pariatur molestiae, facilis in rem ea aliquid dicta qui debitis neque repudiandae officiis quia maxime perferendis asperiores dignissimos tempora expedita libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis quia exercitationem a necessitatibus molestiae quidem, incidunt beatae minima, tempora quam id libero doloremque nostrum molestias, expedita corporis neque ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum est saepe, vel exercitationem mollitia. Minus, pariatur? Dolorum saepe eaque id, molestiae, nihil tempora maxime, eligendi nostrum dignissimos neque error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel enim itaque reprehenderit, rem obcaecati expedita, quidem sapiente error doloribus assumenda impedit. Rem vel deserunt in modi maiores, dolorum minima?</p>
+                        <p id="bio"></p>
                     </div>
 
             </div>
         </div>
 
     </main>
-
+    <script src="perfil.js"></script>
 </body>
 </html>
