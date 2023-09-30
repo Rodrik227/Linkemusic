@@ -14,9 +14,9 @@ function validarSenha() {
 }
 function user1() {
   let adm = {
-      name: Admin,
-      user: Admin,
-      pass: musicadm,
+      name: "Admin",
+      user: "Admin",
+      pass: "musicadm",
       type: "msc",
       account: 3
     }
