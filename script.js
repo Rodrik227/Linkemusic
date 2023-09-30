@@ -22,7 +22,7 @@ function user1() {
     }
     localStorage.setItem("adm@linkemusic.com", JSON.stringify(adm))
   }
-}
+
   
 function checkEmail() {
   const email = document.getElementById('email')
