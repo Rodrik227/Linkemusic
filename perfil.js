@@ -2,12 +2,19 @@ fetch('./assets/artists.json')
     .then((response) => response.json())
     .then((json) => {artists = json});
 
+fetch('./assets/producers.json')
+    .then((response) => response.json())
+    .then((json) => producers = json);
+
     async function fetchData() {
         try {
             const artistsResponse = await fetch('./assets/artists.json');
             const artists = await artistsResponse.json();
+
+            const producerResponse = await fetch ('./assets/producers.json')
+            const producers = await producerResponse.json()
     
-            fillInfos(artists);
+            fillInfos(artists, producers);
             console.log('fetch')
         } catch (error) {
             console.error('Erro ao buscar dados:', error);
@@ -25,6 +32,8 @@ fetch('./assets/artists.json')
             
             if (parseInt(params.type) === 1) { // Converte params.type para número e compara
                 data = artists;
+            }else if (parseInt(params.type) === 2){
+                data = producers
             }
             
             const userDesejado = params.id;

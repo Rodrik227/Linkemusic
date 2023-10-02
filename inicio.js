@@ -36,8 +36,14 @@ function account() {
     }
     
     if(data.account == 1) {
-        fn.style.display = "flex"
-        bd.style.display = "flex"
+        if (screen.width < 640 || screen.height < 480) {
+            fn.style.display = "block"
+            bd.style.display = "flex"
+        } else {
+            fn.style.display = "flex"
+            bd.style.display = "flex"
+        }
+
         blur.forEach(element => {
             element.style.filter = "blur(2px)";
           });
@@ -87,6 +93,9 @@ fetch('./assets/artists.json')
 fetch('./assets/events.json')
     .then((response) => response.json())
     .then((json) => events = json);
+fetch('./assets/producers.json')
+    .then((response) => response.json())
+    .then((json) => producers = json);
 
     async function fetchData() {
         try {
@@ -95,20 +104,16 @@ fetch('./assets/events.json')
     
             const eventsResponse = await fetch('./assets/events.json');
             const events = await eventsResponse.json();
+            
+            const producersResponse = await fetch('./assets/producers.json');
+            const producers = await producersResponse.json();
     
             // Agora que os dados foram carregados, você pode chamar a função createEvent
-            createEvent(artists, events);
+            createEvent(artists, events,producers);
         } catch (error) {
             console.error('Erro ao buscar dados:', error);
         }
     }
-    
-    function createEvent(artists, events) {
-        // Aqui você pode usar os dados de artists e events
-        // Faça o que você precisa fazer com os dados
-    }
-    
-    // Chame a função fetchData para iniciar o processo
 
 function createEvent() {
     events.forEach(event => {
@@ -228,6 +233,71 @@ artistDiv.appendChild(bioPara);
 const artistsContainer = document.getElementById("artists");
 artistsContainer.appendChild(link)
 link.appendChild(artistDiv);
+
+    })
+    
+    producers.forEach(producer => {
+        // Cria a div "producer"
+const producerDiv = document.createElement("div");
+producerDiv.className = "producer";
+
+const link = document.createElement('a')
+link.href = `./perfil.html?id=${producer.user}&type=2`
+link.className = "perfil"
+// Cria a div "userA" dentro da div "producer"
+const userADiv = document.createElement("div");
+userADiv.className = "userA";
+userADiv.style.backgroundImage = `url(${producer.img})`
+// Cria a div "infosA" dentro da div "producer"
+const infosADiv = document.createElement("div");
+infosADiv.className = "infosA";
+
+// Adiciona um título "Username" à div "infosA"
+const usernameHeading = document.createElement("h3");
+usernameHeading.textContent = producer.user;
+
+// Adiciona um elemento de classificação à div "infosA"
+const ratingSpan = document.createElement("span");
+ratingSpan.className = "fa fa-star checked";
+
+// Adiciona a classificação (por exemplo, 4/5) à div "infosA"
+const ratingText = document.createElement("span");
+ratingText.textContent = producer.stars + "/5";
+ratingText.id = "rating";
+
+// Adiciona informações de estilo à div "infosA"
+const estiloPara = document.createElement("p");
+estiloPara.className = "info2";
+estiloPara.id = "estilo";
+estiloPara.textContent = producer.style
+
+// Adiciona informações de idade à div "infosA"
+const idadePara = document.createElement("p");
+idadePara.className = "info2";
+idadePara.id = "idade";
+idadePara.textContent = producer.age + " Anos"
+
+// Adiciona um parágrafo de biografia à div "producer"
+const bioPara = document.createElement("p");
+bioPara.id = "bio";
+bioPara.textContent = producer.bio;
+
+// Adiciona todos os elementos criados à div "infosA"
+infosADiv.appendChild(usernameHeading);
+infosADiv.appendChild(ratingSpan);
+infosADiv.appendChild(ratingText);
+infosADiv.appendChild(estiloPara);
+infosADiv.appendChild(idadePara);
+
+// Adiciona a div "userA", a div "infosA" e o parágrafo de biografia à div "producer"
+producerDiv.appendChild(userADiv);
+producerDiv.appendChild(infosADiv);
+producerDiv.appendChild(bioPara);
+
+// Adiciona a div "producer" à div com o id "producers" existente no HTML
+const producersContainer = document.getElementById("producers");
+producersContainer.appendChild(link)
+link.appendChild(producerDiv);
 
     })
 }

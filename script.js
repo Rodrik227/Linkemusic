@@ -12,7 +12,18 @@ function validarSenha() {
     checkEmail()
   }
 }
+function user1() {
+  let adm = {
+      name: "Admin",
+      user: "Admin",
+      pass: "musicadm",
+      type: "msc",
+      account: 3
+    }
+    localStorage.setItem("adm@linkemusic.com", JSON.stringify(adm))
+  }
 
+  
 function checkEmail() {
   const email = document.getElementById('email')
 
@@ -68,4 +79,5 @@ function checkAccount() {
     emailInput.reportValidity();
   }
 }
+user1()
 

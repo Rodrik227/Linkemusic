@@ -263,7 +263,7 @@ header img.logo {
 .checked {
     color: orange;
 }
-.artist {
+.artist, .producer {
     background-color: white;
     color: black;
     border-radius: 20px;
@@ -296,7 +296,7 @@ header img.logo {
     grid-column-end: 3;
     text-align: center;
 }
-#artists {
+#artists, #producers {
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
@@ -326,3 +326,66 @@ footer a{
     color: aqua;
 }
 
+@media screen and (max-width: 450px) {
+    #finish {
+        top: 0;
+        max-width: 100vw;
+    }
+    #left {
+        width: 100vw;
+    }
+    #right {
+        max-width: 100vw;
+    }
+    #finish #right h1 {
+        font-size: 70px;
+    }
+    #finish h2 {
+        font-size: 30px;
+    }
+    #finish h3 {
+        font-size: 30px;
+    }
+    input[type=text], input[type=date]  {
+        font-size: 20px;
+    }
+    input[type=submit] {
+        font-size: 30px;
+    }
+    select {
+        font-size: 20px;
+        padding: 10px;
+    }
+    a {
+        font-size: 20px;
+    }
+    #left img {
+        display: none;
+    }
+    header img.logo {
+        width: 30vw;
+        margin-right: 0px;
+    }
+    .user img {
+        width: 10vw;
+    }
+    section.buttons {
+        display: grid;
+        justify-content: center;
+    }
+    .buttons a {
+        width: 70vw
+    }
+    .event {
+        width: 100vw;
+    }
+    .img {
+        width: 90vw;
+    }
+    .search {
+        display: none
+    }
+    .artist, .producer {
+        width: 90vw;
+    }
+}

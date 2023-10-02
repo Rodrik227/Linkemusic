@@ -285,3 +285,46 @@ header img.logo {
 .bio p {
     color: var(--baby);
 }
+@media screen and (max-width: 450px) {
+    .perfil {
+        display: block;
+        margin-top: 5vw;
+    }
+    .bola {
+        margin-left: 13%;
+        margin-top: 10px;
+    }
+    .nomeperfil {
+        height: 70vh;
+    }
+    .biografia-geral {
+        width: 80vw;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+    .inf-geral {
+        display: block;
+        width: 80vw;
+        height: 20vh;
+        padding: 10px 0px;
+    }
+    .inf-geral div {
+        margin: 10px 0px;
+    }
+    .foto {
+        width: 80vw;
+    }
+    .bio {
+        width: 80vw;
+    }
+    header img.logo {
+        width: 30vw;
+        margin-right: 0px;
+    }
+    .user img {
+        width: 10vw;
+    }
+    .search {
+        display: none;
+    }
+}

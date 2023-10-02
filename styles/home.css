@@ -103,3 +103,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 450px) {
+    .fone {
+        display: none;
+    }
+    .logo {
+        width: 90vw;
+    }
+    .home {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: absolute;
+    top: 280px;
+    left: 0px;
+    }
+    .home p {
+        text-align: center;
+    }
+}
