@@ -70,6 +70,7 @@ button {
     box-shadow: 5px 3px 2px #0000002d;
     cursor: pointer;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 button:hover {
@@ -98,6 +99,7 @@ button:hover {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {

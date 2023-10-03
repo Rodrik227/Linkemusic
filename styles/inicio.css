@@ -95,7 +95,11 @@ select {
     display: none;
     justify-content: center
 }
-
+p.warning {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
 /* -----------------------------------------------------------HEADER */
 header h1 {
     font-family: 'Righteous';
@@ -172,6 +176,9 @@ header{
 header img.logo {
     width: 16vw;
     margin-right: 15vw;
+}
+a {
+    cursor: pointer;
 }
 /* -----------------------------------------------------------main  */
 .buttons a {

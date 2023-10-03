@@ -1,14 +1,14 @@
-// function login() {
-//     console.log('dai é foda')
-//     const auth = localStorage.getItem('login')
-//     console.log(auth)
-//     if(auth == 'false') {
-//         console.log('porra')
-//         window.location.href = "index.html"
+function login() {
+    console.log('dai é foda')
+    const auth = localStorage.getItem('login')
+    console.log(auth)
+    if(auth == 'false') {
+        console.log('porra')
+        window.location.href = "index.html"
 
-//     }
-// }
-// login()
+    }
+}
+
 
 const form = document.getElementById('formCD')
 form.addEventListener('submit', e => e.preventDefault())
@@ -256,7 +256,7 @@ infosADiv.className = "infosA";
 const usernameHeading = document.createElement("h3");
 usernameHeading.textContent = producer.user;
 
-// Adiciona um elemento de classificação à div "infosA"
+// Adiciona um eleme    nto de classificação à div "infosA"
 const ratingSpan = document.createElement("span");
 ratingSpan.className = "fa fa-star checked";
 
@@ -302,5 +302,9 @@ link.appendChild(producerDiv);
     })
 }
 
+function not() {
+    alert("Desculpe, essa função não está disponível na versão demo")
+}
 
+login()
 fetchData();
