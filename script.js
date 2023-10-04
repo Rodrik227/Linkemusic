@@ -69,7 +69,7 @@ function checkAccount() {
       localStorage.setItem("login", 'true');
       localStorage.setItem("user",emailInput.value )
       console.log('Login bem-sucedido');
-      window.location.href = "home.html"
+      window.location.href = "disclaimer.html"
     } else {
       senhaInput.setCustomValidity('Senha incorreta');
       senhaInput.reportValidity();
@@ -79,5 +79,6 @@ function checkAccount() {
     emailInput.reportValidity();
   }
 }
+
 user1()
 

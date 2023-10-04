@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/setup.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Disclaimer</title>
+</head>
+<body>
+    <img class="logo" src="assets/logo.svg" alt="logo linkemusic">
+    <section class="box disclaimer">
+        <h1>Aviso</h1>
+        <p>Essa é uma versão de demonstração para o portal do Linkemusic, nem todas as funções do site estão disponíveis.Este não é um projeto final, podendo ter mudanças no futuro. </p>
+        <p>Todos os úsuarios presentes nas paginas são falsos, com exceção do PocketMirror, isso inclui eventos.</p>
+        <p>Os dados inseridos ao criar sua conta não serão armazenados ou ultilizados de nenhuma forma, sendo apenas mantidos no dispositivo onde esta sendo ultilizado. Caso queira apagar os dados salvos aperte <span onclick="deleteData()">Aqui</span>. </p>
+        <p>Esta versão está sobre o domínio de Rodrigo Penno Dini, João Vitor Kuhn Rangel e Eduardo Baierle dos Santos.</p>
+        <p>Selecionando a caixa abaixo você concorda que leu estes avisos e que concorda com eles.</p>
+        <br>
+        <form id="agreeForm">
+            <input id="check" type="checkbox" required><label>Eu estou ciente das informações acima</label>
+            <input id="agree" onclick="agreed()" type="submit" value="Seguir para o site">
+        </form>
+    </section>
+
+    <img class="nota" src="/assets/backgound.png" alt="">
+    <script >
+        function agreed() {
+    console.log('agreed')
+    const form = document.getElementById('agreeForm')
+    form.addEventListener('submit', e => e.preventDefault())
+    if (form.checkValidity() == true) {
+    console.log('validated')
+    window.location.href = "./home.html"
+  }
+    }
+    function deleteData() {
+        localStorage.clear()
+        alert('Dados deletados')
+        window.location.href = "./"
+    }
+    </script>
+</body>
+</html>

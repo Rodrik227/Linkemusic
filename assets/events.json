@@ -4,28 +4,41 @@
         "title": "Super event",
         "style": "rock",
         "city": "Vera Cruz",
-        "img": "https://static.standard.co.uk/2022/10/06/17/newFile-1.jpg?width=968&auto=webp&quality=50&crop=968%3A645%2Csmart"
+        "img": "https://static.standard.co.uk/2022/10/06/17/newFile-1.jpg?width=968&auto=webp&quality=50&crop=968%3A645%2Csmart",
+        "date": "13/10",
+        "time": "19:00",
+        "info": "O Super Event é um dos maiores festivais de rock do ano. Prepare-se para uma noite cheia de energia e músicas poderosas. As bandas de rock mais icônicas estarão no palco para fazer você vibrar ao som das guitarras."
     },
     {
         "user": 2,
         "title": "Alabama fest",
         "style": "Pop/rap",
-        "city": "Porto alegre",
-        "img": "https://lh3.googleusercontent.com/nwaSif1Ytlcm79PeDvIU8Qib0MFJVhNZLQukq5k7XF6ABrsbNayYAaNqraXiQGlbhcNZjjX3pE9AYqdIUzD6Y-Wn_g=h200-rw"
+        "city": "Porto Alegre",
+        "img": "https://lh3.googleusercontent.com/nwaSif1Ytlcm79PeDvIU8Qib0MFJVhNZLQukq5k7XF6ABrsbNayYAaNqraXiQGlbhcNZjjX3pE9AYqdIUzD6Y-Wn_g=h200-rw",
+        "date": "28/10",
+        "time": "21:30",
+        "info": "O Alabama Fest é a mistura perfeita de pop e rap. Prepare-se para uma noite de batidas contagiantes e letras cativantes. Os melhores artistas da cena pop e rap estarão lá para fazer você dançar a noite toda."
     },
     {
         "user": 6,
         "title": "Bailão top",
         "style": "funk",
         "city": "Canoas",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a68f2eed0e6285be82a9fcc/1526807384376-0I1ETBFAM8MZHKOEPG8S/image2.jpeg"
+        "img": "https://images.squarespace-cdn.com/content/v1/5a68f2eed0e6285be82a9fcc/1526807384376-0I1ETBFAM8MZHKOEPG8S/image2.jpeg",
+        "date": "03/11",
+        "time": "19:00",
+        "info": "O Bailão Top é o evento de funk mais quente da região. Venha se divertir ao som das batidas envolventes do funk brasileiro. Esta festa promete muita dança e diversão durante toda a noite."
     },
     {
         "user": 7,
         "title": "electrofest",
         "style": "eletronica",
         "city": "Novo Hamburgo",
-        "img": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/cached.imagescaler.hbpl.co-201604271135049.jpg"
+        "img": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/cached.imagescaler.hbpl.co-201604271135049.jpg",
+        "date": "18/11",
+        "time": "18:30",
+        "info": "O Electrofest é o paraíso dos amantes da música eletrônica. Prepare-se para uma jornada sonora incrível, com DJs renomados e luzes deslumbrantes. Esta experiência eletrônica levará você a um mundo de batidas e ritmos hipnotizantes."
     }
 ]
+
 

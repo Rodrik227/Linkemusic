@@ -283,6 +283,10 @@ a {
 
     
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 .perfil {
     text-decoration: none;
 }
@@ -331,6 +335,15 @@ footer a{
 }
 #twitter {
     color: aqua;
+}
+footer a {
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+footer a:hover {
+    filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.336));
 }
 
 @media screen and (max-width: 450px) {

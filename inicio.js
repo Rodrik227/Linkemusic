@@ -121,6 +121,9 @@ function createEvent() {
 const eventDiv = document.createElement("div");
 eventDiv.className = "event";
 
+const link = document.createElement('a');
+link.href = `./event.html?id=${event.user}`
+
 // Cria a estrutura interna da div "event"
 const titleDiv = document.createElement("div");
 titleDiv.className = "title";
@@ -164,10 +167,10 @@ infosDiv.appendChild(cityP);
 eventDiv.appendChild(titleDiv);
 eventDiv.appendChild(imgDiv);
 eventDiv.appendChild(infosDiv);
-
+link.appendChild(eventDiv)
 // Adiciona a div "event" dentro da div "events"
 const eventsDiv = document.getElementById("events");
-eventsDiv.appendChild(eventDiv);
+eventsDiv.appendChild(link);
     })
 
 

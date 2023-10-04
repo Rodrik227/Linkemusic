@@ -196,8 +196,7 @@ header img.logo {
     margin: 40px 0 0 9vw;
     font-size: 20px;
 }
-.style {
-}
+
 .inf-geral {
     width: 900px;
     height: 100px;
@@ -327,4 +326,32 @@ header img.logo {
     .search {
         display: none;
     }
+}
+footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    border-color: red;
+    background-color: black;
+}
+footer p {
+    padding: 20px;
+    color: whitesmoke;
+}
+footer a{
+    text-decoration: none;
+}
+#instagram {
+    color: yellow;
+}
+#twitter {
+    color: aqua;
+}
+footer a {
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+footer a:hover {
+    filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.336));
 }
